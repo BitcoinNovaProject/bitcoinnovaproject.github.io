@@ -1,6 +1,4 @@
 .header-logo {
-    height: 100px;
-    line-height: 100px;
     float: left;
     transition: height .3s ease;
 }
