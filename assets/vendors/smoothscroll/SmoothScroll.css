@@ -1,0 +1,10 @@
+/**
+ * SmoothScroll
+ * Copyright 2019 Bitcoin Nova
+**/
+:target:before {
+    content:"";
+    display:block;
+    height:120px; /* fixed header height*/
+    margin:-120px 0 0; /* negative fixed header height */
+}
