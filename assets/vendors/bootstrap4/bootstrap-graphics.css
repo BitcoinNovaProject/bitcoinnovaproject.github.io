@@ -1388,7 +1388,6 @@ th {
 }
 
 html {
-  font-size: 10px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -4648,7 +4647,6 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 55px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 .navbar:before, .navbar:after {
@@ -4660,7 +4658,7 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+
   }
 }
 
