@@ -1,5 +1,6 @@
 {
-	"titule-home-website" : "Bitcoin Nova | Votre Argent Anonyme, Sûr, Impossible de Suivre et de Transaction Rapide.",
+	"lang": "fr",
+	"title-home-website" : "Bitcoin Nova | Votre Argent Anonyme, Sûr, Impossible de Suivre et de Transaction Rapide.",
 	"menu-home" : "Accueil",
 	"menu-getstarted" : "Commencer",
 	"menu-getstarted-what" : "Qu'est-ce que Bitcoin Nova?",
