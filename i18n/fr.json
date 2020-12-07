@@ -1,4 +1,13 @@
 {
+	"@metadata": {
+		"authors": [
+			"nnian"
+		],
+		"last-updated": "2020-09-02",
+		"locale": "fr",
+		"usecase": "French",
+		"message-documentation": "qqq"
+	},
 	"lang": "fr",
 	"title-home-website" : "Bitcoin Nova | Votre Argent Anonyme, Sûr, Impossible de Suivre et de Transaction Rapide.",
 	"menu-home" : "Accueil",

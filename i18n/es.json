@@ -1,4 +1,13 @@
 {
+  "@metadata": {
+    "authors": [
+      "coinvigilante"
+    ],
+    "last-updated": "2020-09-22",
+    "locale": "es",
+    "usecase": "Spanish",
+    "message-documentation": "qqq"
+  },
   "lang": "es",
   "title-home-website" : "Bitcoin Nova | Su Dinero Anónimo, Seguro, Imposible de Rastrear y Transacciones Rápidas.",
   "menu-home" : "Inicio",

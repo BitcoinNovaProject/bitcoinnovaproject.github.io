@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Accepting | Bitcoin Nova | Anonymous,  Secure, Untraceable  and Fungible</title>
+		<title data-i18n="title-accepting-website">Accepting | Bitcoin Nova | Anonymous,  Secure, Untraceable  and Fungible</title>
 		<meta charset="utf-8">
 		<meta name="robots" content="index,follow"/>
 		<meta name="language" content="en"/>
@@ -45,6 +45,8 @@
 		<script src="../../assets/vendors/jquery/jquery-3.3.1.slim.js"></script>
 		<script src="../../assets/vendors/bootstrap4/bootstrap.js"></script>
 		<script src="../../assets/vendors/bootstrap4/popper.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../assets/js/checkLang.js"></script>
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
@@ -105,21 +107,20 @@
 										<a class="dropdown-item" href="../../resources/developers">Developers</a>
 									</div>
 									</li>
+									<li class="nav-item dropdown">
+										<div class="locale-switcher">
+											<span class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Language</span>
+											<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+													<a class="dropdown-item" href="/" data-locale="en"><b>EN</b></a>
+													<a class="dropdown-item" href="" data-locale="zh">CN</a>
+													<a class="dropdown-item" href="/" data-locale="de">DE</a>
+													<a class="dropdown-item" href="/" data-locale="it">IT</a>
+													<a class="dropdown-item" href="/" data-locale="he">HE</a>
+													<a class="dropdown-item" href="/" data-locale="es">ES</a>
+											</div> 
+										</div>
+									</li>       
 								</ul>
-								<div class="header-toogleGroup">
-									<div class="header-chooseLanguage">
-													<!-- dropdown -->
-													<div class="dropdown" data-init="dropdown"><a class="dropdown-toggle" href="javascript:void(0)">EN</a>
-														<div class="dropdown-content" data-position="right">
-															<ul class="list-style-none">
-																<li><a href="#">EN</a></li>
-																<li><a href="es">ES</a></li>
-															</ul>
-														</div>
-													</div>
-											<!-- End / dropdown -->
-									</div>
-								</div>
 							</div>
 						</nav>
 				<!-- End / consult-nav -->
@@ -321,6 +322,10 @@
 					<!-- End / footer -->
 		</div>
 		<!-- Vendors-->
+		<script src="../../assets/js/jquery.i18n.js"></script>
+    <script src="../../assets/js/jquery.i18n.messagestore.js"></script>
+    <script src="../../assets/js/jquery.i18n.parser.js"></script>
+    <script src="../../assets/js/global.js"></script>
 		<script src="../../assets/vendors/jquery/jquery.min.js"></script>
 		<script src="../../assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
 		<script src="../../assets/vendors/isotope-layout/isotope.pkgd.js"></script>

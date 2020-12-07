@@ -1,5 +1,14 @@
 {
-  "lang": "en",
+	"@metadata": {
+		"authors": [
+			"nnian"
+		],
+		"last-updated": "2020-09-02",
+		"locale": "pt",
+		"usecase": "Portuguese",
+		"message-documentation": "qqq"
+	},
+	"lang": "pt",
   "title-home-website" : "Bitcoin Nova | Your Money Anonymous, Safe, Impossible To Track and Fast Transaction.",
 	"menu-home" : "Home",
 	"menu-getstarted" : "Get Started",
@@ -26,7 +35,7 @@
 	"menu-resources-individuals" : "Individuals",
 	"menu-resources-businesses" : "Businesses",
 	"menu-resources-developers" : "Developers",
-	"menu-language" : "EN",
+	"menu-language" : "PT",
 	"slider-main-titule-1a" : "Bitcoin Nova",
 	"slider-main-description-1a" : "A New Innovative Way To Be The Definitive Cryptocurrency.",
 	"slider-main-description-2a" : "Your money, Secure, Private and Untraceable.",
@@ -78,5 +87,4 @@
 	"menu-privacy-policy" : "Privacy Policy",
 	"footer-description-coin" : "Bitcoin Nova is cash for a connected world. It’s fast, private, and secure. With Bitcoin Nova, you are your own bank. You can spend safely, knowing that others can not see your balances or track your activity.",
 	"footer-copyright" : "Copyright &copy; 2019 Bitcoin Nova. All rights Reserved."
-  }
 }

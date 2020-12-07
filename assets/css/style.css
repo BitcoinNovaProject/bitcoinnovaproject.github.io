@@ -3,14 +3,25 @@
     min-width: 100%;
     z-index: 999;
 }
+
 .header-logo {
     float: left;
     transition: height .3s ease;
 }
 .nav-item {
     font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.nav-item.active {
     font-weight: 700;
 }
+
+.nav-item.dropdown.active {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .language-selector {
     max-width: max-content;
     font-size: 13px;
