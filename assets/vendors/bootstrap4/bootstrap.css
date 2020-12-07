@@ -4367,7 +4367,7 @@ input[type="button"].btn-block {
   }
   .ml-auto, .mx-auto {
     margin-left: auto !important;
-    height: 87vh;
+    height: 80vh;
     overflow-y: scroll;
     background: transparent;
   }
