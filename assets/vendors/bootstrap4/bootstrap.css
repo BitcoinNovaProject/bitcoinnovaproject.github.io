@@ -1830,6 +1830,9 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
+  ul.container.inline.slider-info-home li {
+    display: grid;
+  }
 }
 
 @media (max-width: 1199.98px) {

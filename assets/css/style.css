@@ -1,7 +1,7 @@
 .navbar {
-    position: fixed;
-    min-width: 100%;
-    z-index: 999;
+    position: fixed !important;
+    min-width: 100% !important;
+    z-index: 999 !important;
 }
 
 .header-logo {
@@ -39,6 +39,11 @@
     z-index: 99;
     opacity: 0.5;
 }
+
+.fade.in {
+    opacity: 1;
+  }
+
 .footer{
     background-color: #1a1a23;
     overflow: hidden;

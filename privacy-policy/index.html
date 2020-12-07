@@ -46,83 +46,84 @@
 		<script src="../assets/vendors/jquery/jquery-3.3.1.slim.js"></script>
 		<script src="../assets/vendors/bootstrap4/bootstrap.js"></script>
 		<script src="../assets/vendors/bootstrap4/popper.js"></script>
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<![endif]-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../assets/js/checkLang.js"></script>
 	</head>
 	<body>
-		<!-- Menu -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-									<div class="container">
-										<div class="col-8 col-md-10 col-sm-10 col-xl-10">
-											<img class="header-logo" src="../assets/img/coin/logo.png" alt="BitcoinNova">
-										</div>
-										<div class="col-4 col-md-2 col-sm-2 col-xl-2 text-right">
-											<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-										</div>
-									</div>
-					  			<div class="collapse navbar-collapse" id="navbarText">
-								<ul class="navbar-nav ml-auto">
-									<li class="nav-item "><a class="nav-link" href="../">Home</a></li>
-									<li class="nav-item dropdown active">
-									<a class="nav-link dropdown-toggle" href="../get-started/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="../get-started/what-is-bitcoin-nova">What is bitcoin nova?</a>
-										<a class="dropdown-item" href="../get-started/using">Using</a>
-										<a class="dropdown-item" href="../get-started/accepting">Accepting</a>
-										<a class="dropdown-item" href="../get-started/contributing">Contributing</a>
-										<a class="dropdown-item" href="../get-started/mining">Mining</a>
-										<a class="dropdown-item" href="../get-started/faq">FAQ</a>
-									</div>
-									</li>
-									<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="../download/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="../download/index.html#desktop">Desktop Wallets</a>
-										<a class="dropdown-item" href="../download/index.html#mobile">Mobile Wallets</a>
-										<a class="dropdown-item" href="../download/index.html#webwallet">Web Wallets</a>
-										<a class="dropdown-item" href="../download/index.html#hardwarewallet">Hardware Wallets</a>
-									</div>
-									</li>
-									<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="../ecosystem/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ecosystem</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="../ecosystem/wallets">Wallets</a>
-										<a class="dropdown-item" href="../ecosystem/nodes">Nodes</a>
-										<a class="dropdown-item" href="../ecosystem/explorers">Explorers</a>
-										<a class="dropdown-item" href="../ecosystem/exchanges">Exchanges</a>
-										<a class="dropdown-item" href="../ecosystem/merchants">Merchants</a>
-										<a class="dropdown-item" href="../ecosystem/miningpools">Mining Pools</a>
-									</div>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="../news/">News</a>
-									</li>
-									<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="../resources/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="../resources/individuals/">Individuals</a>
-										<a class="dropdown-item" href="../resources/businesses">Businesses</a>
-										<a class="dropdown-item" href="../resources/developers">Developers</a>
-									</div>
-									</li>
-								</ul>
-								<div class="header-toogleGroup">
-									<div class="header-chooseLanguage">
-													<!-- dropdown -->
-													<div class="dropdown" data-init="dropdown"><a class="dropdown-toggle" href="javascript:void(0)">EN</a>
-														<div class="dropdown-content" data-position="right">
-															<ul class="list-style-none">
-																<li><a href="#">EN</a></li>
-																<li><a href="es">ES</a></li>
-															</ul>
-														</div>
-													</div>
-											<!-- End / dropdown -->
-									</div>
-								</div>
+					<!-- Menu -->
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+						<div class="container navbar-spacing">
+							<div class="col-8 col-md-8 col-sm-8 col-xl-10">
+								<img class="header-logo" src="../assets/img/coin/logo.png" alt="BitcoinNova">
 							</div>
-						</nav>
+							<div class="col-4 col-md-2 col-sm-2 col-xl-2 text-right" id="remove-item">
+								<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+							<a data-i18n="menu-home" class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a data-i18n="menu-getstarted" class="nav-link dropdown-toggle" href="../get-started/" id="navbarDropdownMenuLinkGetStarted" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkGetStarted">
+								<a data-i18n="menu-getstarted-what" class="dropdown-item" href="../get-started/what-is-bitcoin-nova">What is bitcoin nova?</a>
+								<a data-i18n="menu-getstarted-using" class="dropdown-item" href="../get-started/using">Using</a>
+								<a data-i18n="menu-getstarted-accepting" class="dropdown-item" href="../get-started/accepting">Accepting</a>
+								<a data-i18n="menu-getstarted-contributing" class="dropdown-item" href="../get-started/contributing">Contributing</a>
+								<a data-i18n="menu-getstarted-mining" class="dropdown-item" href="../get-started/mining">Mining</a>
+								<a data-i18n="menu-getstarted-faq" class="dropdown-item" href="../get-started/faq">FAQ</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a data-i18n="menu-download" class="nav-link dropdown-toggle" href="../download/" id="navbarDropdownMenuLinkDownload" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkDownload">
+								<a data-i18n="menu-download-desktop-wallets" class="dropdown-item" href="../download/index.html#desktop">Desktop Wallets</a>
+								<a data-i18n="menu-download-mobile-wallets" class="dropdown-item" href="../download/index.html#mobile">Mobile Wallets</a>
+								<a data-i18n="menu-download-web-wallets" class="dropdown-item" href="../download/index.html#webwallet">Web Wallets</a>
+								<a data-i18n="menu-download-hardware-wallets" class="dropdown-item" href="../download/index.html#hardwarewallet">Hardware Wallets</a>
+							</div>
+								</li>
+						<li class="nav-item dropdown">
+							<a data-i18n="menu-ecosystem" class="nav-link dropdown-toggle" href="../ecosystem/" id="navbarDropdownMenuLinkEcosystem" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ecosystem</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkEcosystem">
+								<a data-i18n="menu-ecosystem-wallets" class="dropdown-item" href="../ecosystem/wallets">Wallets</a>
+								<a data-i18n="menu-ecosystem-nodes" class="dropdown-item" href="../ecosystem/nodes">Nodes</a>
+								<a data-i18n="menu-ecosystem-explorers" class="dropdown-item" href="../ecosystem/explorers">Explorers</a>
+								<a data-i18n="menu-ecosystem-exchanges" class="dropdown-item" href="../ecosystem/exchanges">Exchanges</a>
+								<a data-i18n="menu-ecosystem-merchants" class="dropdown-item" href="../ecosystem/merchants">Merchants</a>
+								<a data-i18n="menu-ecosystem-mining-pools" class="dropdown-item" href="../ecosystem/miningpools">Mining Pools</a>
+							</div>
+								</li>
+						<li class="nav-item">
+							<a data-i18n="menu-news" class="nav-link" href="../news/">News</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a data-i18n="menu-resources" class="nav-link dropdown-toggle" href="../resources/" id="navbarDropdownMenuLinkResources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkResources">
+								<a data-i18n="menu-resources-individuals" class="dropdown-item" href="../resources/individuals/">Individuals</a>
+								<a data-i18n="menu-resources-businesses" class="dropdown-item" href="../resources/businesses">Businesses</a>
+								<a data-i18n="menu-resources-developers" class="dropdown-item" href="../resources/developers">Developers</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+								<div class="locale-switcher">
+									<span class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Language</span>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+											<a class="dropdown-item" href="#" data-locale="zh">CN</a>
+											<a class="dropdown-item" href="#" data-locale="de">DE</a>
+											<a class="dropdown-item" href="#" data-locale="en">EN</a>
+											<a class="dropdown-item" href="#" data-locale="es">ES</a>
+											<a class="dropdown-item" href="#" data-locale="fr">FR</a>
+											<a class="dropdown-item" href="#" data-locale="ru">RU</a>
+									</div> 
+								</div>
+						</li>       
+					</ul>
+				</div>
+			</nav>
+		<!-- End Menu -->
 				<!-- End / consult-nav -->
 			<!-- Content-->
 			<div class="md-content">
@@ -268,21 +269,24 @@
 		 </div>
 		</div>
 		<!-- Vendors-->
-		<script src="../assets/vendors/jquery/jquery.min.js"></script>
-		<script src="../assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
-		<script src="../assets/vendors/isotope-layout/isotope.pkgd.js"></script>
-		<script src="../assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
-		<script src="../assets/vendors/jquery.countTo/jquery.countTo.min.js"></script>
-		<script src="../assets/vendors/jquery.countUp/jquery.countup.min.js"></script>
-		<script src="../assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
-		<script src="../assets/vendors/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js"></script>
-		<script src="../assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="../assets/vendors/masonry-layout/masonry.pkgd.js"></script>
-		<script src="../assets/vendors/owl.carousel/owl.carousel.js"></script>
-		<script src="../assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
-		<script src="../assets/vendors/menu/menu.min.js"></script>
-		<script src="../assets/vendors/smoothscroll/SmoothScroll.min.js"></script>
-		<!-- App-->
-		<script src="../assets/js/main.js"></script>
+				<script src="../assets/js/jquery.i18n.js"></script>
+				<script src="../assets/js/jquery.i18n.messagestore.js"></script>
+				<script src="../assets/js/jquery.i18n.parser.js"></script>
+				<script src="../assets/js/global.js"></script>
+				<script src="../assets/vendors/jquery/jquery.min.js"></script>
+				<script src="../assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+				<script src="../assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+				<script src="../assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
+				<script src="../assets/vendors/jquery.countTo/jquery.countTo.min.js"></script>
+				<script src="../assets/vendors/jquery.countUp/jquery.countup.min.js"></script>
+				<script src="../assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+				<script src="../assets/vendors/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js"></script>
+				<script src="../assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+				<script src="../assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+				<script src="../assets/vendors/owl.carousel/owl.carousel.js"></script>
+				<script src="../assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+				<script src="../assets/vendors/menu/menu.min.js"></script>
+				<script src="../assets/vendors/smoothscroll/SmoothScroll.min.js"></script>
+				<script src="../assets/js/main.js"></script>
 		</body>
 	</html>

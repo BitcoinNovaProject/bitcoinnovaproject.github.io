@@ -5808,7 +5808,7 @@ p.post-01-description.description-started-6 {
     padding-top: 20%;
   }
   .slider-info-home {
-    max-width: 50%;
+    max-width: 70%;
   }
   .slider-content {
     position: relative;
@@ -6191,5 +6191,4 @@ p.post-01-description.description-started-6 {
   p.post-01-description.description-started-6 {
       height: auto;
   }
-
 }
